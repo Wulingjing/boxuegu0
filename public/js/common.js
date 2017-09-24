@@ -1,4 +1,4 @@
-define(['jquery','template','cookie'],function($){
+define(['jquery','template','cookie'],function($,template){
 
 	// cookie是一个插件，直接插在$上，所以function里面不需要参数
 
@@ -47,8 +47,8 @@ define(['jquery','template','cookie'],function($){
 	// $('.aside .profile img').attr('src',loginInfo.tc_avatar);
 	// $('.aside .profile h4').html(loginInfo.tc_name);
 
-	var tpl='<div class="avatar img-circle"><img src="{{tc_avatar}}">
-            </div><h4>{{tc_name}}</h4>';
+	var tpl='<div class="avatar img-circle"><img src="{{tc_avatar}}">'
+            +'</div><h4>{{tc_name}}</h4>';
             var html=template.render(tpl,loginInfo);
             $('.aside .profile').html(html);
 
