@@ -33,6 +33,7 @@ header('content-type:text/html;charset=utf8');
 	// include('./views/main/index.html');
 	
 	// echo $path;
+	// 嵌入子页面
 	include('./views/'.$dir.'/'.$filename.'.html');
 
 
